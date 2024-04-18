@@ -1,0 +1,55 @@
+.bg_gradient {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(40, 10, 64, 1) 100%
+  );
+}
+svg {
+  fill: white;
+}
+
+.bold-600 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bold-700 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, purple, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+
+  text-decoration: none;
+}
