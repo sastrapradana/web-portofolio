@@ -25,7 +25,7 @@ export default function Navbar() {
       <button
         className={`text-[.9rem] hover:border-b  ${
           hash == url && "border-b border-violet-600"
-        }  hover:border-white `}
+        }  hover:border-violet-600 `}
       >
         <a href={url}>{title}</a>
       </button>
@@ -37,7 +37,7 @@ export default function Navbar() {
       <button
         className={`text-[1.2rem] mt-4 uppercase hover:border-b tracking-[2px]  ${
           hash == url && "border-b border-violet-600"
-        }  hover:border-white `}
+        }  hover:border-violet-600 `}
       >
         <a href={url}>{title}</a>
       </button>

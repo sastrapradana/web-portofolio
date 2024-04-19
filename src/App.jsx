@@ -1,13 +1,20 @@
 import "./App.css";
 import Navbar from "./components/navbar";
+import About from "./view/about";
+import Contact from "./view/contact";
 import Home from "./view/home";
+import Project from "./view/project";
+import Skill from "./view/skill";
 
 function App() {
   return (
-    <div className="w-full min-h-[100vh] max-h-max relative bg_gradient">
+    <div className="w-full min-h-[100vh] pb-10 max-h-max relative bg_gradient">
       <Navbar />
       <Home />
-      <div className="w-[90%] h-[100vh] m-auto"></div>
+      <About />
+      <Project />
+      <Skill />
+      <Contact />
     </div>
   );
 }

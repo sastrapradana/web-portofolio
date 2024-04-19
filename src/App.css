@@ -6,34 +6,59 @@
     rgba(40, 10, 64, 1) 100%
   );
 }
-svg {
-  fill: white;
-}
 
 .bold-600 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .bold-700 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, purple, white);
+  background: linear-gradient(90deg, #7847dd, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-project:hover .card-grad2 {
+  display: flex;
+  transition: all 0.3s;
+}
+
+.grad-bottom {
+  background-image: linear-gradient(to bottom, #280747 0%, #7a00df 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.card-grad2 {
+  background-image: linear-gradient(to left, #3a0b66 0%, #7a00df 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.card-grad:hover {
+  background-image: linear-gradient(to left, #12093331 0%, #8910eb 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card-grad:hover p {
+  color: white;
 }
 
 .btn-grad {
   background-image: linear-gradient(
     to right,
-    #2b5876 0%,
+    #7847dd 0%,
     #4e4376 51%,
-    #2b5876 100%
+    #7847dd 100%
   );
   margin: 10px;
   padding: 15px 45px;
@@ -52,4 +77,8 @@ svg {
   box-shadow: 0 0 20px #eee;
 
   text-decoration: none;
+}
+
+.color-1 {
+  color: #7847dd;
 }
