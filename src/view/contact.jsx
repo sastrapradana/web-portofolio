@@ -22,7 +22,12 @@ export default function Contact() {
   ];
 
   return (
-    <div className="w-[90%] h-max m-auto mt-10 pt-10" id="contact">
+    <div
+      className="w-[90%] h-max m-auto mt-10 pt-10"
+      id="contact"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <div className="w-full h-max text-center lg:w-[600px] lg:m-auto">
         <h1 className="text-[2rem] gradient-text lg:text-[3rem] lg:font-semibold">
           My Contact

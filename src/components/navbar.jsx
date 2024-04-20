@@ -82,6 +82,9 @@ export default function Navbar() {
       className={`w-full h-[100px] fixed top-0 z-20 ${
         isScroll ? "bg-[#0000001e] backdrop-blur-md" : null
       }`}
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-anchor-placement="top-bottom"
     >
       {isMenu && <Menu />}
       <div className="w-[90%] h-full flex justify-between items-center lg:flex-row-reverse m-auto">
@@ -97,6 +100,9 @@ export default function Navbar() {
           <button className="px-6 py-3 bold-600  btn-grad  rounded-full">
             Hire Me!
           </button>
+        </div>
+        <div className="w-max hidden h-max cursor-pointer lg:block">
+          <img src="/sastra.svg" alt="" className="w-[40px] h-[40px]" />
         </div>
       </div>
     </div>

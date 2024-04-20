@@ -44,6 +44,8 @@ export default function About() {
             <div
               className="w-full h-max flex flex-col gap-1 bg-[#150820] p-4 rounded-lg card-grad"
               key={i}
+              data-aos="fade-up"
+              data-aos-duration="10000"
             >
               <p className="text-[1rem] text-violet-700 font-semibold">
                 {item.duration}
@@ -69,6 +71,8 @@ export default function About() {
             <div
               className="w-full h-max flex flex-col gap-1 bg-[#150820] p-4 rounded-lg card-grad"
               key={i}
+              data-aos="fade-up"
+              data-aos-duration="10000"
             >
               <p className="text-[1rem] text-violet-700 font-semibold">
                 {item.duration}

@@ -63,8 +63,10 @@ export default function Skill() {
       <div className="w-full h-max flex flex-wrap justify-center gap-4 mt-6 p-4">
         {dataSkills.map((item, i) => (
           <div
-            className="w-[40%] h-[180px] bg-[#00000031] rounded-3xl flex flex-col justify-center items-center cursor-pointer hover:border-2 hover:border-violet-700 hover:bg-[#42008034] lg:w-[15%]"
+            className="w-[45%] h-[180px] bg-[#00000031] rounded-3xl flex flex-col justify-center items-center cursor-pointer hover:border-2 hover:border-violet-700 hover:bg-[#42008034] lg:w-[15%]"
             key={i}
+            data-aos="flip-left"
+            data-aos-duration="1000"
           >
             {item.icons}
             <p className="text-purple-600">{item.name}</p>

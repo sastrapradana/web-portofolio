@@ -4,21 +4,35 @@ export default function Home() {
   const medsosData = [
     {
       icons: <FaTiktok />,
-      url: "/",
+      url: "https://www.tiktok.com/@sstra_pradana?_t=8lgLMGDBoBd&_r=1",
     },
     {
       icons: <FaInstagram />,
-      url: "/",
+      url: "https://www.instagram.com/sastrapradn?igsh=MXU4N2FvcGQybHZmcw==",
     },
     {
       icons: <FaLinkedinIn />,
-      url: "/",
+      url: "https://www.linkedin.com/in/sastra-pradana-a9a486297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       icons: <FaGithub />,
-      url: "/",
+      url: "https://github.com/Sastrapradana06",
     },
   ];
+
+  const downloadCV = () => {
+    const fileUrl = "/CV_Sastra-Pradana.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "sastra-pradana-cv.pdf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -28,13 +42,18 @@ export default function Home() {
       >
         <div className="w-full h-max">
           <div className="w-full h-max bold-600">
-            <p className="text-[1.2rem] lg:text-[1.8rem]">I am Sastra</p>
-            <p className="text-[1.7rem] gradient-text lg:text-[2.5rem]">
+            <p className="text-[1.5rem] lg:text-[1.8rem]">I am Sastra</p>
+            <p className="text-[1.8rem] gradient-text lg:text-[2.5rem]">
               Front End Developer
             </p>
           </div>
-          <div className="w-full h-max mt-7 flex justify-center lg:hidden">
-            <div className="w-[65%] h-[300px] overflow-hidden transform rotate-3  border rounded-3xl border-purple-950 hover:border-purple-700 hover:border-2 hover:rotate-0 duration-300">
+          {/* img profile */}
+          <div
+            className="w-full h-max mt-7 flex justify-center lg:hidden"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <div className="w-[80%] h-[300px] overflow-hidden transform rotate-3  border rounded-3xl border-purple-950 lg:w-[65%] hover:shadow-xl hover:shadow-[purple]  hover:border-purple-700 hover:border-2 hover:rotate-0 duration-300 ">
               <img
                 src="/img2.jpeg"
                 alt="img"
@@ -43,13 +62,17 @@ export default function Home() {
               />
             </div>
           </div>
+          {/* end image profile */}
           <div className="w-full h-max mt-6">
             <p className="text-[1.1rem]">
               I am a student who is very passionate about programming, and my
               determination is to become a professional in the field of
               programming
             </p>
-            <button className="px-6 py-3 mt-4 rounded-full border-2 border-purple-800 hover:bg-purple-950">
+            <button
+              className="px-6 py-3 mt-4 rounded-full border-2 border-purple-800 hover:bg-purple-950"
+              onClick={downloadCV}
+            >
               Donwload CV
             </button>
             <div className="w-max h-max  flex items-center gap-3 mt-4">
@@ -59,8 +82,14 @@ export default function Home() {
                   name="button-link"
                   aria-label="button-link"
                   key={i}
+                  data-aos="fade-up"
+                  data-aos-duration="500"
                 >
-                  <a href={item.url} aria-label="link to medsos">
+                  <a
+                    href={item.url}
+                    aria-label="link to medsos"
+                    target="_blank"
+                  >
                     {item.icons}
                   </a>
                 </button>
@@ -68,8 +97,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full h-max mt-7 lg:flex justify-center hidden">
-          <div className="w-[65%] h-[400px] overflow-hidden transform rotate-3  border-2 rounded-3xl border-purple-950 hover:border-purple-700 hover:border-2 hover:rotate-0 duration-300">
+        <div
+          className="w-full h-max mt-7 lg:flex justify-center hidden"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <div className="w-[65%] h-[400px] overflow-hidden transform rotate-3  border-2 rounded-3xl border-purple-950 hover:shadow-xl hover:shadow-[purple] hover:border-purple-700 hover:border-2 hover:rotate-0 duration-300 ">
             <img
               src="/img2.jpeg"
               alt="img"
