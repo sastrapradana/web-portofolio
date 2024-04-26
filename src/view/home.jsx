@@ -1,6 +1,23 @@
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 import { FaGithub, FaLinkedinIn, FaTiktok, FaInstagram } from "react-icons/fa6";
 
 export default function Home() {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(textRef.current, {
+      strings: ["Front End Developer", "Undergraduate Student"],
+      typeSpeed: 50,
+      backSpeed: 20,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const medsosData = [
     {
       icons: <FaTiktok />,
@@ -44,7 +61,7 @@ export default function Home() {
           <div className="w-full h-max bold-600">
             <p className="text-[1.5rem] lg:text-[1.8rem]">I am Sastra</p>
             <p className="text-[1.8rem] gradient-text lg:text-[2.5rem]">
-              Front End Developer
+              <span ref={textRef}></span>
             </p>
           </div>
           {/* img profile */}

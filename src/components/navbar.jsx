@@ -98,7 +98,9 @@ export default function Navbar() {
             ))}
           </div>
           <button className="px-6 py-3 bold-600  btn-grad  rounded-full">
-            Hire Me!
+            <a href="https://api.whatsapp.com/send?phone=6283870915417">
+              Hire Me!
+            </a>
           </button>
         </div>
         <div className="w-max hidden h-max cursor-pointer lg:block">
