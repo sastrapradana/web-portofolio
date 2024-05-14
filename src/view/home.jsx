@@ -7,10 +7,10 @@ export default function Home() {
 
   useEffect(() => {
     const typed = new Typed(textRef.current, {
-      strings: ["Front End Developer", "Undergraduate Student"],
-      typeSpeed: 50,
+      strings: ["Front End Developer", "Informatics Student"],
+      typeSpeed: 70,
       backSpeed: 20,
-      loop: true,
+      loop: false,
     });
 
     return () => {
