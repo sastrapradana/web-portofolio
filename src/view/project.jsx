@@ -11,11 +11,28 @@ export default function Project() {
       urlGit: "https://github.com/Sastrapradana06/Clone-Instagram",
     },
     {
-      title: "Classcrafter",
-      description: "School Management Website",
-      img: "/classcrafter.png",
-      urlWeb: "https://classcrafter.vercel.app/",
-      urlGit: "https://github.com/Sastrapradana06/FE-WEB-MANAGEMENT-KELAS",
+      title: "Myquran",
+      description:
+        "Mobile-friendly access to Quran surahs, prayer times, and daily duas.",
+      img: "/myquran.jpeg",
+      urlWeb: "https://myquran-sstra.vercel.app/",
+      urlGit: "https://github.com/Sastrapradana06/myQuran",
+    },
+    {
+      title: "Wedding Web",
+      description:
+        "Mobile-friendly online wedding invitations with elegant and customizable designs.",
+      img: "/undangan.jpeg",
+      urlWeb: "https://web-wedding-v2.vercel.app/home",
+      urlGit: "https://github.com/Sastrapradana06/wedding-web-v2",
+    },
+    {
+      title: "Mycatatan",
+      description:
+        "Store your notes securely and access them anytime, anywhere.",
+      img: "/mycatatan.jpeg",
+      urlWeb: "https://my-catatan.vercel.app/",
+      urlGit: "https://github.com/Sastrapradana06/my-catatan",
     },
     {
       title: "Dompetku",
