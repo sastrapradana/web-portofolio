@@ -1,6 +1,7 @@
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { VscSquirrel } from "react-icons/vsc";
+import { RiSupabaseFill } from "react-icons/ri";
 import {
   SiExpress,
   SiFirebase,
@@ -44,8 +45,8 @@ export default function Skill() {
       name: "Firebase",
     },
     {
-      icons: <SiMysql size={100} />,
-      name: "Mysql",
+      icons: <RiSupabaseFill size={100} className="text-green-500" />,
+      name: "Supabase",
     },
   ];
 

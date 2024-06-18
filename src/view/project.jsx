@@ -4,6 +4,13 @@ import { FaGithub } from "react-icons/fa6";
 export default function Project() {
   const dataProjects = [
     {
+      title: "Classcrafter",
+      description: "Management classroom web application",
+      img: "/classcrafter.jpeg",
+      urlWeb: "https://classcrafter.vercel.app/",
+      urlGit: "https://github.com/Sastrapradana06/ClassCrafter-v2",
+    },
+    {
       title: "Snapvibes",
       description: "Website social media with a mobile appearance",
       img: "/snapvibes2.jpeg",
