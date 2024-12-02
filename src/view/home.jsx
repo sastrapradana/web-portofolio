@@ -55,7 +55,6 @@ export default function Home() {
     <>
       <div
         className={`w-[90%] m-auto pt-28 pb-3 lg:flex lg:items-center lg:w-[80%] lg:pt-32`}
-        id="home"
       >
         <div className="w-full h-max">
           <div className="w-full h-max bold-600">

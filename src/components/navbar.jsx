@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
@@ -5,18 +6,46 @@ import { useLocation } from "react-router-dom";
 export default function Navbar() {
   const [isScroll, setIsScroll] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
+  const [activeSection, setActiveSection] = useState("#home");
 
   const { hash } = useLocation();
 
+  const handleScroll = () => {
+    if (window.scrollY > 30) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScroll(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.4,
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
 
     return () => {
-      window.addEventListener("scroll", handleScroll);
+      sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
 
@@ -24,7 +53,7 @@ export default function Navbar() {
     return (
       <button
         className={`text-[.9rem] hover:border-b  ${
-          hash == url && "border-b border-violet-600"
+          activeSection == url && "text-violet-600"
         }  hover:border-violet-600 `}
       >
         <a href={url}>{title}</a>
@@ -91,13 +120,13 @@ export default function Navbar() {
         <div className="w-max h-max cursor-pointer lg:hidden">
           <HiOutlineMenuAlt2 size={45} onClick={() => setIsMenu(!isMenu)} />
         </div>
-        <div className="w-max h-max flex gap-4 items-center">
+        <div className="w-max h-max flex gap-14 items-center">
           <div className="w-max h-max items-center gap-6 bold-600 hidden lg:flex">
             {listLink.map((item, i) => (
               <ButtonLink title={item.nama} url={item.url} key={i} />
             ))}
           </div>
-          <button className="px-6 py-3 bold-600  btn-grad  rounded-full">
+          <button className="px-6 py-3 bold-600  glow-button  rounded-full">
             <a href="https://api.whatsapp.com/send?phone=6283870915417">
               Hire Me!
             </a>

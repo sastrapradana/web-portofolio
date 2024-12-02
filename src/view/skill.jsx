@@ -5,7 +5,6 @@ import { RiSupabaseFill } from "react-icons/ri";
 import {
   SiExpress,
   SiFirebase,
-  SiMysql,
   SiNextdotjs,
   SiTailwindcss,
 } from "react-icons/si";
@@ -51,7 +50,7 @@ export default function Skill() {
   ];
 
   return (
-    <div className="w-[90%] h-max m-auto mt-10 pt-10" id="skill">
+    <div className="w-[90%] h-max m-auto mt-10 pt-10">
       <div className="w-full h-max text-center lg:w-[600px] lg:m-auto">
         <h1 className="text-[2rem] gradient-text lg:text-[3rem] lg:font-semibold">
           My Skill

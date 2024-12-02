@@ -34,3 +34,7 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #7947de; /* Warna thumb scrollbar */
 }
+
+.border-rr {
+  @apply border border-red-500;
+}

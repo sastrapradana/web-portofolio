@@ -23,7 +23,7 @@ export default function Project() {
         "Mobile-friendly access to Quran surahs, prayer times, and daily duas.",
       img: "/myquran.jpeg",
       urlWeb: "https://myquran-sstra.vercel.app/",
-      urlGit: "https://github.com/Sastrapradana06/myQuran",
+      urlGit: "https://github.com/sastrapradana/myquran",
     },
     {
       title: "Wedding Web",
@@ -33,14 +33,14 @@ export default function Project() {
       urlWeb: "https://web-wedding-v2.vercel.app/home",
       urlGit: "https://github.com/Sastrapradana06/wedding-web-v2",
     },
-    {
-      title: "Mycatatan",
-      description:
-        "Store your notes securely and access them anytime, anywhere.",
-      img: "/mycatatan.jpeg",
-      urlWeb: "https://my-catatan.vercel.app/",
-      urlGit: "https://github.com/Sastrapradana06/my-catatan",
-    },
+    // {
+    //   title: "Mycatatan",
+    //   description:
+    //     "Store your notes securely and access them anytime, anywhere.",
+    //   img: "/mycatatan.jpeg",
+    //   urlWeb: "https://my-catatan.vercel.app/",
+    //   urlGit: "https://github.com/Sastrapradana06/my-catatan",
+    // },
     {
       title: "Dompetku",
       description: "Website Management Money",
@@ -51,7 +51,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="w-[90%] h-max m-auto mt-10 pt-10" id="project">
+    <div className="w-[90%] h-max m-auto mt-10 pt-10 lg:mt-[100px]">
       <div className="w-full h-max text-center lg:w-[600px] lg:m-auto">
         <h1 className="text-[2rem] gradient-text lg:text-[3rem] lg:font-semibold">
           My Projects

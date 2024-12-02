@@ -1,6 +1,5 @@
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
-import { CiLocationOn } from "react-icons/ci";
 
 export default function Contact() {
   const dataContacts = [
@@ -24,7 +23,6 @@ export default function Contact() {
   return (
     <div
       className="w-[90%] h-max m-auto mt-10 pt-10"
-      id="contact"
       data-aos="fade-down"
       data-aos-duration="1000"
     >

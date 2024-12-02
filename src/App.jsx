@@ -13,14 +13,24 @@ function App() {
     once: true,
   });
   return (
-    <div className="w-full min-h-[100vh] pb-10 max-h-max relative bg_gradient">
+    <main className="w-full min-h-[100vh] pb-10 max-h-max relative bg_gradient">
       <Navbar />
-      <Home />
-      <About />
-      <Project />
-      <Skill />
-      <Contact />
-    </div>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="project">
+        <Project />
+      </section>
+      <section id="skill">
+        <Skill />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+    </main>
   );
 }
 
